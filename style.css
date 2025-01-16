@@ -27,11 +27,13 @@ a {
   text-decoration: none;
   cursor: pointer;
   position: relative;
+  transition: transform 0.5s;
 }
 /* ======================= Button  ======================= */
 .container {
   display: flex;
   place-items: center;
+  transition: transform 0.7s;
 }
 
 .content {
@@ -47,7 +49,6 @@ a {
   color: var(--dark);
   overflow: hidden;
   z-index: 0;
-  transition: rotate 4s, scale 4s;
 }
 .text {
   font-weight: 700;
@@ -184,5 +185,5 @@ a > img {
   transform: translateY(7px) rotate(-24deg) scale(1.1);
 }
 .container:hover .triangle {
-  transform:  rotate(-12deg) scale(1.1);
+  transform: rotate(-12deg) scale(1.1);
 }
